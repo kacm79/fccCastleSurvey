@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="styles.css" />
+    <title>Castle Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Harbrooke Castle Feedback Survey</h1>
+    <p id="description" >Please take the time to complete this short survey about your visit</p>
+    <form action="" id="survey-form">
+      <fieldset>
+        <label id="name-label">Your name: <input id="name" name="name" type="text" placeholder="write your full name here" required /></label>
+        <label id="email-label">Your email: <input id="email" name="email" type="email" placeholder="For identification purposes" required /></label>
+        <label id="number-label">Size of group: <input id="number" name="number" type="number" min="1" max="12" placeholder="Max 12" required/></label>
+      </fieldset>
+
+      <fieldset>
+        <label>Which part(s) of Harbrooke did you visit today?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">The gardens</option>
+            <option value="2">The castle</option>
+            <option value="3">The castle and the gardens</option>
+          </select>
+        <p>How would you rate your visit to Harbrooke Castle?</p>
+        <label><input name="rating" type="radio" value="1" /> I did not like it </label>
+        <label><input name="rating" type="radio" value="2"/> I quite liked it </label>
+        <label><input name="rating" type="radio" value="3"/> I loved it! </label>
+        <p>Which parts of your visit did you most enjoy (You can tick more than one)</p>
+        <label><input name="gardens-enjoy" type="checkbox" value="1" /> The gardens</label>
+        <label><input name="castle-enjoy" type="checkbox" value="1" /> The castle</label>
+        <label><input name="cafe-enjoy" type="checkbox" value="1" /> The cafe</label>
+        <label><input name="mill-enjoy" type="checkbox" value="1" /> The mill</label>    
+      </fieldset>
+
+      <fieldset>
+        <label>Please write any further feedback below:
+          <textarea name="extra-feedback" rows="3" cols="30" placeholder="Any comments or questions"></textarea>
+        </label>
+      </fieldset>
+
+      <input id="submit" type="submit" value="Submit" />
+          </form>
+  </body>
+  </html>
