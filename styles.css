@@ -1,0 +1,44 @@
+body {
+  width: 100%;
+  margin: 0;
+  background-color: #FDEEDC;
+  font-family: Tahoma;
+}
+
+header {
+  width:75%;
+  min-width: 400px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+form {
+  background-color: #FFD8A9;
+  width:75%;
+  min-width: 400px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding-bottom: 10px;
+}
+
+fieldset {
+  border: none;
+}
+
+#name, #email, select, textarea {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+#number, #dropdown {
+  width: 150px;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+#submit {
+  display: block;
+margin: 10px auto;
+}
