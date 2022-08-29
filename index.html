@@ -6,16 +6,18 @@
     <title>Castle Survey Form</title>
   </head>
   <body>
+    <header>
     <h1 id="title">Harbrooke Castle Feedback Survey</h1>
     <p id="description" >Please take the time to complete this short survey about your visit</p>
+    </header>
     <form action="" id="survey-form">
-      <fieldset>
-        <label id="name-label">Your name: <input id="name" name="name" type="text" placeholder="write your full name here" required /></label>
+      <fieldset id="personal-info">
+        <label id="name-label">Your name: <input id="name" name="name" type="text" placeholder="Write your full name here" required /></label>
         <label id="email-label">Your email: <input id="email" name="email" type="email" placeholder="For identification purposes" required /></label>
         <label id="number-label">Size of group: <input id="number" name="number" type="number" min="1" max="12" placeholder="Max 12" required/></label>
       </fieldset>
 
-      <fieldset>
+      <fieldset id="rating">
         <label>Which part(s) of Harbrooke did you visit today?
           <select id="dropdown" name="dropdown">
             <option value="">(select one)</option>
@@ -34,7 +36,7 @@
         <label><input name="mill-enjoy" type="checkbox" value="1" /> The mill</label>    
       </fieldset>
 
-      <fieldset>
+      <fieldset extra-info>
         <label>Please write any further feedback below:
           <textarea name="extra-feedback" rows="3" cols="30" placeholder="Any comments or questions"></textarea>
         </label>
